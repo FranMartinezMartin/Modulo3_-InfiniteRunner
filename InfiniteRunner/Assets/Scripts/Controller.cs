@@ -6,14 +6,12 @@ public class Controller : MonoBehaviour
 {
     Animator animator;
     CharacterController cc;
-
     float movementSpeed;
-    bool isWalking = false;
-
     float turnSmooth = 0.1f;
     float turnVelocity;
-
     Rigidbody rb;
+
+    bool isJumping = false;
     float jumpForce = 5f;
     
     void Start()
@@ -23,42 +21,6 @@ public class Controller : MonoBehaviour
         movementSpeed = 5f;
         rb = GetComponent<Rigidbody>();
     }
-/*
-    void Update()
-    {
-        Vector3 movementDirection = Vector3.zero;
-
-        if (Input.GetKey(KeyCode.W))        {
-            walking(true);     
-            movementDirection.z = 1;  
-            transform.rotation = Quaternion.Euler(new Vector3(0f,0f,0f));
-        }
-        else if(Input.GetKey(KeyCode.S)){
-            walking(true);     
-            movementDirection.z = -1;
-            transform.rotation = Quaternion.Euler(new Vector3(0f,180f,0f));
-        }
-        else if(Input.GetKey(KeyCode.A)){
-            walking(true);     
-            movementDirection.x = -1;
-            transform.rotation = Quaternion.Euler(new Vector3(0f,-90f,0f)); 
-        }
-        else if(Input.GetKey(KeyCode.D)){
-            walking(true);     
-            movementDirection.x = 1;
-            transform.rotation = Quaternion.Euler(new Vector3(0f,90f,0f)); 
-        }
-        else if(Input.GetKey(KeyCode.Space)){
-            walking(true);     
-            movementDirection.y = 1; 
-        }
-        else {
-            walking(false);
-        }
-
-        Move(movementDirection);
-    }
-*/
 
     void Update() {
         float horizontal = Input.GetAxis("Horizontal");
@@ -77,19 +39,21 @@ public class Controller : MonoBehaviour
             walking(false);
         }
 
-        if(Input.GetButtonDown("Jump"))
+        isJumping = Input.GetButtonDown("Jump");
+
+        if(isJumping)
         {
-            jumping(true);
-        }else {
-           jumping(false);
+            rb.AddForce(new Vector3(0,jumpForce,0), ForceMode.Impulse);
         }
     }
 
     void walking(bool state){
+        Debug.Log("walk");
         animator.SetBool("isWalking", state);
     }
 
     void jumping(bool state){
+        Debug.Log("run");
         animator.SetBool("isJumping", state);
         if (state)
         {
@@ -99,6 +63,7 @@ public class Controller : MonoBehaviour
     }
 
     void running(bool state) {
+        Debug.Log("jump");
         animator.SetBool("isRunning", state);
     }
 
