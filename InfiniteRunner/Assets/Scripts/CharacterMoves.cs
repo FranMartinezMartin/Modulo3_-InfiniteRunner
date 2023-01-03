@@ -7,7 +7,7 @@ public class CharacterMoves : MonoBehaviour
 {
     Rigidbody rb;
     Vector3 movementDir;
-    [SerializeField] float jumpForce = 5f;
+    [SerializeField] float jumpForce = 10f;
     [SerializeField] float speed = 5f;
     [SerializeField] float turnVelocity = 720f;
     Animator animator;
@@ -35,57 +35,41 @@ public class CharacterMoves : MonoBehaviour
             walking(false);
         }
 
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            jumping();
+            jumping(true);
+            StartCoroutine(jump());
         }
-        
-        /*
-        if(movement.magnitude >= 0.1f)
-        {
-            walking(true);
-            float targetAngle = Mathf.Atan2(movement.x,movement.z) * Mathf.Rad2Deg;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y,targetAngle,ref turnVelocity, turnSmooth);
-            transform.rotation = Quaternion.Euler(0f,angle,0f);
-        } else{
-            walking(false);
-        }
-        */
     }
 
     private void FixedUpdate() {
         GroundCheck();
     }
 
-    void walking(bool state)
-    {
+    void walking(bool state) {        
         animator.SetBool("isWalking", state);
     }
-
-    void jumping()
-    {
-        animator.SetBool("isJumping", true);
-        StartCoroutine(landJump());
-        animator.SetBool("isJumping", false);
+    void jumping(bool state) {        
+        animator.SetBool("isJumping", state);   
+    }
+    void running(bool state) {        
+        animator.SetBool("isRunning", state);    
     }
 
-    private IEnumerator landJump(){
-        yield return new WaitForSeconds(1.50f);
-    }
-
-    void running(bool state) {
-        animator.SetBool("isRunning", state);
+    private IEnumerator jump(){
+        yield return new WaitForSeconds(0.5f);
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        yield return new WaitForSeconds(1f);
+        jumping(false);
     }
 
     void GroundCheck()
     {
-        Ray ray = new Ray(transform.position, new Vector3(0,-1,0));
+        Ray ray = new Ray(transform.position, new Vector3(0,-0.2f,0));
         if(Physics.Raycast(ray, 0.2f)){
-            isGrounded = true;
+            isGrounded=true;
         } else {
             isGrounded = false;
-            jumping();
         };
     }
 }
