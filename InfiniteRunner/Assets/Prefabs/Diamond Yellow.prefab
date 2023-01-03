@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 114000011393513452}
   - component: {fileID: 2336842804106460390}
   - component: {fileID: -6822190750366170308}
+  - component: {fileID: 3985287320290919416}
   m_Layer: 0
   m_Name: Diamond Yellow
   m_TagString: Untagged
@@ -137,3 +138,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.2326107
   m_Center: {x: 0, y: 0.00000023841864, z: -0.31269112}
+--- !u!114 &3985287320290919416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011841440206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb31e83e57f2e55489554ec27aa7049e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

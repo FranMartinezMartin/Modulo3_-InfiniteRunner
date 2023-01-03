@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Obstacle
+  - elimination_bar
   layers:
   - Default
   - TransparentFX

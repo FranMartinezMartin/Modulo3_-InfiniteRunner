@@ -197,6 +197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (7)
@@ -391,6 +395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4
@@ -461,6 +469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (1)
@@ -531,6 +543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (2)
@@ -601,6 +617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (5)
@@ -671,6 +691,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (10)
@@ -741,6 +765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (3)
@@ -811,6 +839,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (9)
@@ -881,6 +913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (12)
@@ -951,6 +987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (13)
@@ -1145,6 +1185,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (4)
@@ -1215,6 +1259,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (6)
@@ -1417,6 +1465,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473726105857214055}
     m_Modifications:
+    - target: {fileID: -785770233736917123, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 166872, guid: 8b0e041139b374b4e869fec62970a236, type: 3}
       propertyPath: m_Name
       value: CardboardBox_4 (8)

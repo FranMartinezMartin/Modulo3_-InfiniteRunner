@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 114000010769974528}
   - component: {fileID: 863712817565194650}
   - component: {fileID: 4445223214397810530}
+  - component: {fileID: 2138774998858161645}
   m_Layer: 0
   m_Name: Diamond Blue
   m_TagString: Untagged
@@ -137,3 +138,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.2426512
   m_Center: {x: -0.0000032782555, y: -0.0000026822097, z: -0.7140475}
+--- !u!114 &2138774998858161645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013656696560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb31e83e57f2e55489554ec27aa7049e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

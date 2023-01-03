@@ -20,7 +20,7 @@ public class AnimationScript : MonoBehaviour {
     public Vector3 startScale;
     public Vector3 endScale;
 
-    private bool scalingUp = true;
+    //private bool scalingUp = true;
     public float scaleSpeed;
     public float scaleRate;
     private float scaleTimer;
