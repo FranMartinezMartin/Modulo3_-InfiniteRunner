@@ -5,11 +5,11 @@ using UnityEngine;
 public class gemsBehaviour : MonoBehaviour
 {
     
-    private string gemType;
+    [SerializeField] Camera mainCamera;
 
     void Start()
     {  
-        gemType = transform.name;
+        mainCamera = Camera.main;
     }
 
     void Update()
@@ -17,30 +17,24 @@ public class gemsBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider coll) {
         //SUMAR AL MARCADOR SEGUN COLOR DE GEMA     
-        if(coll.gameObject.tag == "Player") {
-            switch(gemType) {
-            case "Diamond Yellow":
-                print("Diamante amarillo = +1pts");
-            break;
-            case "Diamond Blue":
-                print("Diamante amarillo = +5pts");
-            break;
-            case "Diamond Green":
-                print("Diamante amarillo = +10pts");
-            break;
-            }
+        if(coll.CompareTag("Player")) {
+            switch(transform.tag) {
+            case "YELLOW_D":
+                mainCamera.GetComponent<Score>().yellowDiamondSum();
+                Destroy(gameObject);
+                break;
+            case "BLUE_D":
+                mainCamera.GetComponent<Score>().blueDiamondSum();
+                Destroy(gameObject);
+                break;
+            case "GREEN_D":
+                mainCamera.GetComponent<Score>().greenDiamondSum();
+                Destroy(gameObject);
+                break;
+            }      
         } else if(coll.gameObject.tag == "elimination_bar") {
             Destroy(gameObject);
+            // CUANDO TERMINE EL JUEGO SE DEBE CARGAR PRINCIPAL CON MENSAJE DEL RESULTADO
         }        
     }
-
-    void sumPoints(GameObject gem) {
-        //un switch para saber que gema es
-
-        printPoints();
-    }
-
-    void printPoints() {
-    }
-
 }

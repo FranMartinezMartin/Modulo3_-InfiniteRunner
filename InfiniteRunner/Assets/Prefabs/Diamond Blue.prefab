@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2138774998858161645}
   m_Layer: 0
   m_Name: Diamond Blue
-  m_TagString: Untagged
+  m_TagString: BLUE_D
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,3 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb31e83e57f2e55489554ec27aa7049e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}

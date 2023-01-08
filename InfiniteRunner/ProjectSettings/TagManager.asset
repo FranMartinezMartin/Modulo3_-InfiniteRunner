@@ -7,6 +7,9 @@ TagManager:
   - Floor
   - Obstacle
   - elimination_bar
+  - BLUE_D
+  - YELLOW_D
+  - GREEN_D
   layers:
   - Default
   - TransparentFX
